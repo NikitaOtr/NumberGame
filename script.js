@@ -4,7 +4,6 @@ const isNumber = n => !isNaN(parseInt(n)) && isFinite(n);
 
 function play() {
     const hiddenNumber = Math.round(Math.random() * (100 - 1)  + 1);
-    console.log(hiddenNumber);
 
     function checkAnswer(message, addition = ''){
         let userNumber = prompt(addition + message);
